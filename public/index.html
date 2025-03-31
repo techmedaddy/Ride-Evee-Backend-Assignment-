@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Evee Auth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Ride Evee Auth</h1>
+
+        <div class="form-group">
+            <h2>Signup</h2>
+            <input type="text" id="name" placeholder="Name" />
+            <input type="email" id="email-signup" placeholder="Email" />
+            <input type="text" id="phone" placeholder="Phone" />
+            <input type="password" id="password-signup" placeholder="Password" />
+            <button onclick="signup()">Signup</button>
+        </div>
+
+        <div class="form-group">
+            <h2>Login</h2>
+            <input type="email" id="email-login" placeholder="Email" />
+            <input type="password" id="password-login" placeholder="Password" />
+            <button onclick="login()">Login</button>
+        </div>
+
+        <div class="form-group">
+            <h2>OTP</h2>
+            <input type="email" id="otp-email" placeholder="Email" />
+            <button onclick="sendOTP()">Send OTP</button>
+            <input type="text" id="otp-code" placeholder="Enter OTP" />
+            <button onclick="verifyOTP()">Verify OTP</button>
+        </div>
+
+        <pre id="response"></pre>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
