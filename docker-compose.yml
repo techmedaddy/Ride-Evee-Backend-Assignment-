@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  backend:
+    image: node:18
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "4832:4832" # Random port for Node.js
+    command: sh -c "npm install && npx nodemon server.js"
+    env_file:
+      - .env
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo
+    ports:
+      - "27117:27017" # Random host port mapped to MongoDB
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
