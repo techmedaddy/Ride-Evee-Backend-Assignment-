@@ -115,4 +115,5 @@ docker-compose up
 - **Containerization:** Docker + Docker Compose
 
 
-
+Frontend repo- https://github.com/techmedaddy/ride-evee-frontend
+Frontend deployment - https://techmedaddy.github.io/ride-evee-frontend/
