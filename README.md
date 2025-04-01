@@ -4,6 +4,11 @@ A backend system for managing users in an electric vehicle ecosystem. It support
 
 ---
 
+
+
+
+
+
 ## 🔧 Features
 
 - ✅ User Signup & Login with JWT
@@ -13,6 +18,14 @@ A backend system for managing users in an electric vehicle ecosystem. It support
 - ✅ Protected routes via middleware
 - ✅ Modular and scalable architecture
 - ✅ Dockerized with `docker-compose.yml` (no Dockerfile used)
+
+  ## 🛠️🖥️ System Design 
+
+![WhatsApp Image 2025-04-01 at 13 54 21_2144f056](https://github.com/user-attachments/assets/95fee03e-7b3e-451e-9784-e689512bbbc8)
+
+
+
+
 
 ---
 
